@@ -117,6 +117,7 @@ img {
 /* esse de baixo eh para mudar o design da escrita quando passar com o mouse por cima da palavra, por causa do hover */
 .header_menu ul li a:hover {
   color: #fff;
+  transition: 0.5s;
 }
 
 .header_menu ul li a.menu_ativo {
