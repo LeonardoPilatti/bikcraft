@@ -1,0 +1,477 @@
+/* estilos gerais */
+
+/*header*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* esse display: block na imagem eh para ela ficar do tamanho real, sem dar um padding a mais */
+img {
+  display: block;
+  /* max-width: 100% para a imagem ficar dentro do grid que eh dela */
+  max-width: 100%;
+}
+
+/* esse .btn eh para fazer um botao */
+.btn {
+  border: 3px solid #fec63e;
+  padding: 10px 30px;
+  color: #fec63e;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.btn:hover {
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+.btn.btn-preto:hover {
+  color: #000;
+  border: 3px solid #000;
+}
+
+.subtitulo {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subtitulo:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 10px auto;
+}
+
+.subtitulo-interno {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.subtitulo-interno:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 10px 0;
+}
+
+/* Header */
+.header {
+  /* esse position fixed eh para fixar o header na pagina, para quando rolar o scroll, ele continuar aparecendo
+  no menu, aí usa o "top: 0" para dizer que eh para ele ficar fixado no topo */
+  position: fixed;
+  top: 0;
+  /* width que eh o horizontal como 100% para pegar o tamanho da tela inteiro */
+  width: 100%;
+  background: #fec63e;
+  /* esse padding eh para deixar um espaço entre o top e o bottom e zero entre o left e o right */
+  padding: 15px 0;
+  /* esse z-index a baixo eh para o menu ficar fixado acima de tudo no site */
+  z-index: 10;
+}
+
+/* esse header eh para alinhar o menu a direita */
+.header_menu {
+  text-align: right;
+}
+/* para deixar o "ul li" um ao lado do outro coloca display inline block na classe especifica de onde esta a lista e estou falando com o "LI", pois ele está depois do "UL"*/
+.header_menu ul li {
+  display: inline-block;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+/* nesse que tem o a por último, estou falando com o "a" que esta dentro do "li" que esta dentro do "ul" que esta dentro da classe "header_menu" */
+.header_menu ul li a {
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 0;
+  /* nesse padding da linha de cima, o 10px eh para cima e para baixo, o zero eh para a esquerda e para a direita (top, bottom, left, right) e  */
+}
+/* esse de baixo eh para mudar o design da escrita quando passar com o mouse por cima da palavra, por causa do hover */
+.header_menu ul li a:hover {
+  color: #fff;
+}
+
+.header_menu ul li a.menu_ativo {
+  color: #fff;
+}
+
+/* INTRODUCAO INTERNA */
+.introducao-interna {
+  width: 100%;
+  margin-top: 92px;
+  height: 160px;
+  text-align: center;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.introducao-interna h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.introducao-interna h1:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 6px auto 10px auto;
+}
+/*introducao*/
+
+.introducao {
+  width: 100%;
+  /* sei o tamanho desse 380px pois no adobe XD está assim com 380px */
+  height: 380px;
+  /* esse background foi colocado o "url" pois vai uma imagem nele, aí para acessar uma pasta anterior ao que está o arquivo style.css, usa o "../" para voltar uma pasta e entrar na pasta  "img" e ir em bg.jpgs */
+  background: url("../img/bg.jpg") no-repeat center;
+  /* esse background-size: cover é para preencher a tela inteira */
+  background-size: cover;
+  /* essa margin-top eh para deixar o espaço entre o menu do site */
+  margin-top: 92px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.introducao h1 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.quote-externo {
+  /* max-width para falar que o maximo do quadrado dele eh 360px, que ele não pode passar disso, para quebrar a */
+  max-width: 320px;
+  /* margin 0 auto para centralizar ele no meio do site */
+  margin: 0 auto;
+  /* foi colocado esse margin-bottom para colocar o botao orçamento mais para baixo */
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.quote-externo p {
+  font-style: italic;
+}
+
+/* esse quote-externo p:before e p:after eh para fazer a linha branca do texto */
+.quote-externo p:before,
+.quote-externo p::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 14px auto 10px auto;
+}
+
+.quote-externo cite {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+/* Produtos */
+
+.produtos {
+  padding: 60px 0;
+}
+
+.produtos_lista li {
+  background: #fec63e;
+  text-align: center;
+}
+
+.produtos_lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+
+.produtos_lista li h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 2px auto;
+}
+
+.produtos_lista li p {
+  padding: 10px 20px 20px 20px;
+}
+
+.produtos_icone {
+  background: #000;
+}
+
+.produtos_icone img {
+  margin: 0 auto;
+}
+
+.call {
+  padding-top: 40px;
+  text-align: center;
+  /* o clevar both é para não ter mais nada do lado dele */
+  clear: both;
+}
+
+.call p {
+  margin-bottom: 20px;
+}
+
+/* portfólio */
+.portfolio {
+  width: 100%;
+  background: #000;
+  padding: 40px 0;
+}
+
+.portfolio .subtitulo {
+  color: #fec63e;
+}
+.portfolio .subtitulo:after {
+  background: #fec63e;
+}
+
+.portfolio_lista li:last-child {
+  margin-top: 20px;
+}
+
+.portfolio .call p {
+  color: #fff;
+}
+
+/* qualidade */
+.qualidade {
+  padding: 60px 0;
+}
+/* esse after eh para as linhas do lado da imagem que fazem a ligação entre as palavras */
+.qualidade:after {
+  content: "";
+  width: 634px;
+  height: 83px;
+  display: block;
+  background: url("../img/linhas.svg") no-repeat center;
+  /* position absolute eh para ele ficar somente no retangulo (container) que ele esta */
+  position: absolute;
+  top: 209px;
+  right: 162px;
+  /* z-index -1 eh para ele ficar abaixo de tudo, se aparecer um texto por cima, fica por cima dele'' */
+  z-index: -1;
+}
+.qualidade img {
+  margin: 0 auto;
+}
+
+.qualidade_lista {
+  padding-top: 20px;
+  /* nesse overflow hidden da para usar o "overflow: auto" que também funciona*/
+  overflow: hidden;
+}
+.qualidade_lista li {
+  text-align: center;
+  padding: 0 40px;
+}
+
+.qualidade_lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+/* todo after precisa de um content (conteudo), mesmo que não seja nada, mas precisa ter */
+.qualidade_lista li h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 6px auto;
+}
+
+/* quebra */
+.quebra {
+  width: 100%;
+  height: 220px;
+  background: url("../img/bg-footer.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.quebra .quote-externo {
+  max-width: 400px;
+}
+
+/* footer (rodapé) */
+.footer {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer h3 {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fec63e;
+  font-weight: bold;
+}
+
+.footer h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fec63e;
+  margin: 6px 0 12px 0;
+}
+
+.footer_historia {
+  padding-right: 40px;
+}
+
+.footer_contato ul li {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.footer_redes ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer_redes ul li a {
+  border: 3px solid #fec63e;
+  display: block;
+  padding: 10px;
+}
+
+.footer_redes ul li a:hover {
+  border-color: #fff;
+}
+
+.copy {
+  width: 100%;
+  background: #fec63e;
+  padding: 20px 0;
+}
+
+/* JavaScript*/
+/* isso aqui para baixo é do JavaScrit, para funcionar a funcao de slide e estao todos como ".js" pq se falhar o Javascript algum dia, ele ira continuar mostrando igual sem o Javascrip*/
+.js [data-slide] {
+  position: relative;
+}
+/* esse data-slide > * eh para selecionar todo o texto do arquivo, no caso o do blockquote do portfolio */
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  /* essa opacidade de zero eh para nao aparecer um slide em cima do outro */
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  /* essa opacidade com 1 eh para aparecer o slide que estiver ativo no momento */
+  opacity: 1;
+  transition: opacity 500ms;
+  /* em 500 milisegundos ele vai animar */
+  z-index: 1;
+}
+
+/* esse abaixo eh dos botoes para escolher qual slide eu quero que fique passando */
+.js [data-slide-nav] {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* eu descobri esse de cima e o de baixo inspecionando o elemento no Chrome */
+.js [data-slide-nav] button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  border: none;
+  padding: 0px;
+  /* esse border-radius eh para criar um circulo nos botoes */
+  border-radius: 6px;
+  /* esse text-indent eh para tirar os numeros das bolinhas */
+  text-indent: -99px;
+  /* esse overflow: hidden eh para nao mostrar mais nada fora da bolinha, no caso, nao mostrar os numeros */
+  overflow: hidden;
+  background: #1d1d1d;
+}
+
+/* esse com a classe active eh para mudar a cor quando estiver ativo o slide que esta passando na tela */
+.js [data-slide-nav] button.active {
+  background: #fec63e;
+}
+[data-anime] {
+  opacity: 0;
+}
+
+.fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+
+.anime {
+  opacity: 1;
+  transform: none;
+  transition: opacity 800ms, transform 800ms;
+}
+
+/* esse nao aparece eh para o formulario, para esconder a parte para verificar se são robos ou não */
+.nao-aparece {
+  visibility: hidden;
+  position: absolute;
+  height: 0px;
+}
+
+/* esse form sucesso e erro eh para o formulario, para a mensagem que aparece apos enviar, esses "ID" estao no  script.js */
+#form-sucesso {
+  color: #31aa39;
+}
+
+#form-erro {
+  color: #f64540;
+}

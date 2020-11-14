@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>Bikcraft - Portfólio</title>
+	<!-- essa meta name eh o que aparece no Google, no buscador do Google -->
+	<meta name="description" content="Conheça mais sobre nossas bicicletas já feitas.">
+
+	<!-- essas meta og:type são mais especificamente para as redes sociais, para aparecer melhor -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Bikcraft - Portfólio" />
+	<meta property="og:description" content="Conheça mais sobre nossas bicicletas já feitas." />
+	<!-- esse url eh o url do site -->
+	<meta property="og:url" content="https://bikcraft.com/portfolio.html" />
+	<meta property="og:image" content="http://bikcraft.com/img/og-image.png" />
+
+	<!-- esse eh para facilitar para ver no celular, para limitar ao tamanho da tela do dispositivo	 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- esse link rel eh a imagem que fica do lado do titulo -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- css linkados no index.html -->
+	<link rel="stylesheet" href="css/style.css">
+	<script>document.documentElement.classList.add("js");</script>
+</head>
+<!-- para arrumar certo, coloca tudo nas class, que sao as classes, colocando a "div" no container,
+	ja arruma para os 960px e centralizado, ai os outros como o "nav" coloca na classe para poder editar no css
+	NAV eh para colocar menus no site, para o navegador poder ver que sao menus
+ -->
+
+<body>
+	<header class="header">
+		<div class="container">
+			<a href="index.html" class="grid-4">
+				<img src="img/bikcraft.svg" alt="Bikcraft">
+			</a>
+			<!-- a linha 19, 20 e 22 sao para colocar a imagem da logo da empresa com link para voltar para a logo -->
+			<nav class="grid-12 header_menu">
+				<ul>
+					<li> <a href="sobre.html">Sobre</a> </li>
+					<li> <a href="Produtos.html">Produtos</a> </li>
+					<li> <a href="Portfolio.html" class="menu_ativo">Portfólio</a> </li>
+					<li> <a href="Contato.html">Contato</a> </li>
+				</ul>
+				<!-- da linha 24 a 30 eh sobre o menu de opcoes, com o link a para serem clicaveis -->
+			</nav>
+		</div>
+	</header>
+	<!--  O código a baixo é a baixo da introdução -->
+	<section class="introducao-interna interna_portfolio">
+		<div class="container">
+			<h1 data-anime="400" class="fadeInDown">Portfólio</h1>
+			<p data-anime="800" class="fadeInDown">conheça os projetos que amamos mostrar</p>
+		</div>
+	</section>
+
+	<!-- aqui começa a frase do blockquote -->
+	<section class="container fadeInDown" data-anime="1200" data-slide="quote">
+		<!-- foi duplicado esses tres blockquote para usar no javascript, esse data-slide tbm eh do JS, da primeira coisa no Script.js-->
+		<blockquote class="quote_clientes">
+			<p>"Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo."</p>
+			<cite>Barbara Moss</cite>
+		</blockquote>
+
+		<blockquote class="quote_clientes">
+			<p>"Nada melhor do que dar um rolê com a minha Bikcraft em Francisco Beltrão. Essa é a minha companheira mais fiel, nunca me traiu e está sempre a minha disposição."</p>
+			<cite>Jhony Rato</cite>
+		</blockquote>
+
+		<blockquote class="quote_clientes">
+			<p>"Aqueles que ainda não possuem uma Bikcraft, não sabem o que estão perdendo. A precisão é absurda e a velocidade transcendental. Nunca vi nada igual"</p>
+			<cite>Bernardo Silva</cite>
+		</blockquote>
+
+	</section>
+	<!-- o código abaixo é sobre o portfólio -->
+	<section class="portfolio">
+		<!-- o data-slide sempre vai onde esta segurando a imagem, no caso sempre no container -->
+		<div class="container " data-slide="portfolio">
+			<ul class="portfolio_lista">
+				<li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro"></li>
+				<li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
+				<li class="grid-16"><img src="img/portfolio/Esporte.jpg" alt="Bicicleta Esporte"></li>
+			</ul>
+			<!-- duplicar para ter a animacao no Javascript -->
+			<ul class="portfolio_lista">
+				<li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
+				<li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro"></li>
+				<li class="grid-16"><img src="img/portfolio/Esporte.jpg" alt="Bicicleta Esporte"></li>
+			</ul>
+		</div>
+
+	</section>
+
+	<!-- aqui começa a imagem com a frase no fim do site -->
+	<div class="quebra">
+		<blockquote class="quote-externo container">
+			<p>"O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana"</p>
+			<cite>WILLIAM MORRIS</cite>
+		</blockquote>
+	</div>
+
+	<!-- aqui começa o footer (rodapé) -->
+	<footer>
+		<div class="footer">
+			<div class="container">
+				<div class="grid-8 footer_historia">
+					<h3>Nossa história</h3>
+					<p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana</p>
+				</div>
+				<div class="grid-4 footer_contato">
+					<h3>Contato</h3>
+					<ul>
+						<li>- 46 99900-0000</li>
+						<li>- Contato@bikcraft.com</li>
+						<li>- Francisco Beltrão - PR</li>
+					</ul>
+				</div>
+				<div class="grid-4 footer_redes">
+					<h3>Contato</h3>
+					<ul>
+						<li> <a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="Bikcraft facebook"></a> </li>
+						<li> <a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="Bikcraft instagram"></a> </li>
+						<li> <a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="Bikcraft twitter"></a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="copy">
+			<div class="container">
+				<p class="grid-16">Bikcraft 2020 - Alguns direitos reservados. by: Leonardo Pilatti Dal Puppo</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+<script src="js/simple-anime.js"></script>
+<script src="js/simple-slide.js"></script>
+<script src="js/script.js"></script>
+
+
+</html>
